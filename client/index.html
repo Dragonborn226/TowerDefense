@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Italian Brainrot Tower Defense</title>
+    <style>
+      html, body { margin: 0; height: 100%; background: #0a0d0a; overflow: hidden; }
+      #game { display: block; width: 100%; height: 100%; outline: none; touch-action: none; }
+      #sound-hint {
+        position: fixed; left: 50%; bottom: 16px; transform: translateX(-50%);
+        padding: 6px 14px; border-radius: 999px;
+        background: rgb(0 0 0 / 0.65); color: #fff;
+        font: 14px system-ui, sans-serif; pointer-events: none;
+      }
+      #sound-hint[hidden] { display: none; }
+    </style>
+  </head>
+  <body>
+    <canvas id="game"></canvas>
+    <div id="sound-hint" hidden>Click anywhere for sound</div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
